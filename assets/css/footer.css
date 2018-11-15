@@ -1,0 +1,18 @@
+footer {
+  height: 5rem;
+  display: block;
+  background-color: #828282;
+  overflow: auto;
+}
+footer p {
+  text-transform: none;
+  font-weight: 700;
+  display: block;
+  box-sizing: border-box;
+  line-height: 5rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.75rem;
+  letter-spacing: normal;
+}

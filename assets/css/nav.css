@@ -1,0 +1,82 @@
+nav {
+  position: fixed;
+  height: 9rem;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.25s;
+  padding: 2rem 4.5rem;
+  box-sizing: border-box;
+}
+nav a.logo {
+  font-size: 3.5rem;
+  line-height: 5rem;
+  text-decoration: none;
+  display: block;
+  float: left;
+  overflow: auto;
+}
+nav.not_top a.logo:hover, nav.not_top a.logo:hover strong {
+  background: -webkit-linear-gradient(#f2aa4a, #f2c94c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav a.logo strong {
+  font-family: "Avenir";
+  transform: scale(0.95,1);
+  display: block;
+  float: left;
+  height: 5rem;
+  vertical-align: baseline;
+}
+nav a.logo span, nav ul a {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  height: 5rem;
+}
+nav a.logo span {
+  font-size: 1.25rem;
+  vertical-align: baseline;
+  line-height: 1;
+  padding-top: calc(5rem - 1.2rem - 1.25rem);
+  margin-left: 0.5rem;
+  font-family: "Source Sans Pro"
+}
+nav ul {
+  display: block;
+  float: right;
+}
+nav ul a {
+  display: inline-block;
+  height: 5rem;
+  line-height: 5rem;
+  text-decoration: none;
+  font-size: 1.85rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  margin-left: 2.5rem;
+  text-transform: none;
+}
+nav.not_top ul a:hover {
+  background: -webkit-linear-gradient(#f2aa4a, #f2c94c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav * {
+  transition: color 0.25s;
+}
+nav:not(.not_top) * {
+  color: #fff !important;
+}
+nav.not_top {
+  background-color: rgba(255,255,255,0.65);
+}
+nav.not_top:hover {
+  background-color: rgba(255,255,255,0.95);
+}
+nav.not_top * {
+  color: #828282;
+}

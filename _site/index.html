@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home | Amber Makeup</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="/amber/assets/css/main.css">
+  <link rel="stylesheet" href="/amber/assets/css/nav.css">
+  <link rel="stylesheet" href="/amber/assets/css/footer.css">
+
+  <link rel="stylesheet" href="/amber/assets/css/index.css">
+
+  <link rel="shortcut icon" href="/amber/assets/img/favicon.png">
+</head>
+<body>
+  <nav>
+  <a class="logo" href="/amber/"><strong>Amber</strong><span>makeup</span></a>
+  <ul>
+    <a href="shop.html?t=highlighters">Highlighters</a>
+    <a href="shop.html?t=highlighters">Eyeliner</a>
+  </ul>
+</nav>
+<script>
+
+function checkNavScroll(){
+  var scrollTop = document.querySelector("html").scrollTop;
+  if(scrollTop > 0){
+    document.querySelector("nav").classList.add("not_top");
+  }else{
+    document.querySelector("nav").classList.remove("not_top");
+  }
+}
+
+window.onload = checkNavScroll;
+window.onscroll = checkNavScroll;
+
+</script>
+
+
+  <div class="site_container">
+    <style>
+div.left {
+  text-align: center;
+}
+div.left img {
+  display: inline-block;
+  height: 40rem;
+}
+</style>
+
+<section style="min-height: 100vh;background-image: linear-gradient(to left bottom, #f2c94c, #f2aa4a);">
+  <div class="left">
+    <img src="assets/img/highlighter.png" alt="Amber Highlighter">
+  </div>
+  <div class="right">
+    <h1>Amber Highlighters</h1>
+    <p>We are better than Milk. And Glossier. And MAC. And every other makeup company.</p>
+  </div>
+</section>
+
+  </div>
+
+  <footer>
+  <p>&copy; Amber Makeup 2018</p>
+</footer>
+
+</body>
+</html>

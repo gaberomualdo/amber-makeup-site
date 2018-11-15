@@ -1,0 +1,22 @@
+<nav>
+  <a class="logo" href="{{ site.baseurl }}/"><strong>Amber</strong><span>makeup</span></a>
+  <ul>
+    <a href="shop.html?t=highlighters">Highlighters</a>
+    <a href="shop.html?t=highlighters">Eyeliner</a>
+  </ul>
+</nav>
+<script>
+
+function checkNavScroll(){
+  var scrollTop = document.querySelector("html").scrollTop;
+  if(scrollTop > 0){
+    document.querySelector("nav").classList.add("not_top");
+  }else{
+    document.querySelector("nav").classList.remove("not_top");
+  }
+}
+
+window.onload = checkNavScroll;
+window.onscroll = checkNavScroll;
+
+</script>
