@@ -3,7 +3,7 @@
 }
 ::selection {
   color: #fff;
-  background-color: #F2BA4B;
+  background-color: rgba(0,0,0,0.25);
 }
 a {
   color: #f2c94c;
