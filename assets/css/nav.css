@@ -60,6 +60,31 @@ nav ul a {
   margin-left: 2.5rem;
   text-transform: none;
 }
+nav ul a svg {
+  width: 3.5rem;
+  margin: 0.75rem 0;
+  height: auto;
+  display: block;
+  float: left;
+  fill: #fff;
+  transition: fill 0.25s;
+}
+nav.transition_done ul a svg {
+  transition: fill 0s;
+}
+nav.not_top ul a svg {
+  fill: #828282;
+}
+nav ul a span {
+  display: block;
+  float: left;
+  height: 5rem;
+  line-height: 5.5rem;
+  margin-left: 0.25rem;
+}
+nav.not_top ul a:hover svg {
+  fill: #F2BA4B;
+}
 nav.not_top ul a:hover {
   background: -webkit-linear-gradient(#f2aa4a, #f2c94c);
   -webkit-background-clip: text;
