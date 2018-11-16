@@ -51,21 +51,21 @@ window.onscroll = checkNavScroll;
 
   <div class="site_container">
     <style>
-div.left {
-  text-align: center;
+section.main_section div.left {
+  width: 100%;
 }
-div.left img {
-  display: inline-block;
-  height: 40rem;
+section.main_section div.left h1 {
+  letter-spacing: -0.1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 7rem;
+  line-height: 1.375;
 }
 </style>
 
-<section style="min-height: 100vh;background-image: linear-gradient(to left bottom, #f2c94c, #f2aa4a);">
+<section class="main_section" style="min-height: 100vh;background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(assets/img/bg_home.jpg);">
   <div class="left">
-    <img src="assets/img/highlighter.png" alt="Amber Highlighter">
-  </div>
-  <div class="right">
-    <h1>Amber Highlighters</h1>
+    <h1 style="margin-bottom: 1rem;">Look Your Best,<br>Live Your Best</h1>
     <p>We are better than Milk. And Glossier. And MAC. And every other makeup company.</p>
   </div>
 </section>
