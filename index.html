@@ -6,14 +6,12 @@ stylesheet: "index"
 
 <style>
 section.main_section div.left {
-  width: 100%;
+  width: calc(750px - 9rem);
 }
-section.main_section div.left h1 {
-  letter-spacing: -0.1rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 7rem;
-  line-height: 1.375;
+@media (max-width: 750px) {
+  section.main_section div.left {
+    width: 100%;
+  }
 }
 </style>
 

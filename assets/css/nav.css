@@ -41,7 +41,7 @@ nav a.logo span {
   font-size: 1.25rem;
   vertical-align: baseline;
   line-height: 1;
-  padding-top: calc(5rem - 1.2rem - 1.25rem);
+  padding-top: calc(5rem - 1.15rem - 1.25rem);
   margin-left: 0.5rem;
   font-family: "Source Sans Pro"
 }
@@ -104,4 +104,30 @@ nav.not_top:hover {
 }
 nav.not_top * {
   color: #828282;
+}
+@media (max-width: 750px) {
+  nav {
+    padding: 1.5rem;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+  }
+  nav a.logo {
+    display: inline-block;
+    float: none;
+  }
+  nav ul {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  nav ul a {
+    margin: 0 1rem;
+    display: inline-block;
+    float: none;
+    vertical-align: text-top;
+  }
 }
