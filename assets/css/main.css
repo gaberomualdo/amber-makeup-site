@@ -47,7 +47,7 @@ section.main_section div p {
 }
 @media (max-width: 750px) {
   section.main_section {
-    padding: 1.5rem;
+    padding: 2.5rem;
     padding-top: calc((100vh - 25rem) / 2);
     overflow: auto;
     height: auto;

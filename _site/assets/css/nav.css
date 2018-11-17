@@ -107,7 +107,7 @@ nav.not_top * {
 }
 @media (max-width: 750px) {
   nav {
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     height: auto;
     overflow: auto;
     text-align: center;
@@ -129,5 +129,8 @@ nav.not_top * {
     display: inline-block;
     float: none;
     vertical-align: text-top;
+  }
+  nav.not_top {
+    background-color: rgba(255,255,255,0.9);
   }
 }
