@@ -7,7 +7,7 @@ nav {
   padding: 2rem 4.5rem;
   box-sizing: border-box;
 }
-nav a.logo {
+.logo {
   font-size: 3.5rem;
   line-height: 5rem;
   text-decoration: none;
@@ -20,7 +20,7 @@ nav.not_top a.logo:hover, nav.not_top a.logo:hover strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-nav a.logo strong {
+.logo strong {
   transform: scale(0.95,1);
   display: block;
   float: left;
@@ -28,7 +28,7 @@ nav a.logo strong {
   vertical-align: baseline;
   font-weight: 600;
 }
-nav a.logo span, nav ul a {
+.logo span, nav ul a {
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 0.5rem;
@@ -37,7 +37,7 @@ nav a.logo span, nav ul a {
   box-sizing: border-box;
   height: 5rem;
 }
-nav a.logo span {
+.logo span {
   font-size: 1.25rem;
   vertical-align: baseline;
   line-height: 1;
