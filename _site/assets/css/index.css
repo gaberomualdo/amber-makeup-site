@@ -6,24 +6,24 @@ section.main_section div.left {
     width: 100%;
   }
 }
-section.top_list {
+section.top_list, section.product_list {
   height: 45rem;
   overflow: auto;
   display: block;
 }
-section.top_list > div {
+section.top_list > div, section.product_list > div {
   display: block;
   float: left;
   height: 100%;
 }
-section.top_list div.left {
+section.top_list div.left, section.product_list div.right {
   width: calc(100% - 500px);
   background-image: url(../img/bg_home_2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-section.top_list div.right {
+section.top_list div.right, section.product_list div.left {
   width: 500px;
   background: #828282;
   /* background-image: linear-gradient(to left bottom, #f2c94c, #f2aa4a); */
@@ -55,6 +55,54 @@ section.top_list div.right ul{
     width: calc(100% - 400px);
   }
 }
+
+section.product_list div.left {
+  background: none;
+  color: #828282;
+  width: 400px;
+}
+section.product_list div.right {
+  background: none;
+  width: calc(100% - 400px);
+}
+section.product_list div.left h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #828282;
+  letter-spacing: 0.15rem;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+section.product_list div.left p {
+  font-size: 1.875rem;
+  line-height: 1.75;
+  margin-bottom: 3.5rem;
+}
+section.product_list div.left a.btn {
+  display: inline-block;
+  padding: 0 3.5rem;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #828282;
+  border: 1px solid #828282;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  transition: color 0.2s, background-color 0.2s;
+}
+section.product_list div.left a.btn:hover {
+  color: #fff;
+  background-color: #828282;
+}
+
 @media (max-width: 750px) {
   section.top_list div.left {
     display: none;
@@ -67,7 +115,18 @@ section.top_list div.right ul{
     background-position: center;
     background-color: transparent;
   }
-  section.top_list {
+  section.top_list, section.product_list {
     height: auto;
+  }
+  section.product_list div.left h1 {
+    -webkit-text-stroke-width: 2px;
+    font-size: 8rem;
+  }
+  section.product_list div.left p {
+    font-size: 2rem;
+  }
+  section.product_list div.left a.btn {
+    font-size: 2rem;
+    line-height: calc(6rem - 1px);
   }
 }
