@@ -45,4 +45,29 @@ section.top_list div.right ul{
   overflow: auto;
   list-style: none;
   font-size: 2.5rem;
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  section.top_list div.right {
+    width: 400px;
+  }
+  section.top_list div.left {
+    width: calc(100% - 400px);
+  }
+}
+@media (max-width: 750px) {
+  section.top_list div.left {
+    display: none;
+  }
+  section.top_list div.right {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/bg_home_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
+  section.top_list {
+    height: auto;
+  }
 }

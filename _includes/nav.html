@@ -9,7 +9,7 @@
 <script>
 
 function checkNavScroll(){
-  var scrollTop = document.querySelector("html").scrollTop;
+  var scrollTop = document.body.scrollTop || document.documentElement.scrollTop || document.querySelector("html").scrollTop;
   if(scrollTop > 0){
     document.querySelector("nav").classList.add("not_top");
     setTimeout(function(){
