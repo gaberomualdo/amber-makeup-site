@@ -10,6 +10,11 @@
     font-size: 50%;
   }
 }
+@media (max-width: 500px) {
+  * {
+    font-family: "Source Sans Pro", "Avenir";
+  }
+}
 a {
   color: #f2c94c;
   transition: color 0.25s;

@@ -21,12 +21,12 @@ nav.not_top a.logo:hover, nav.not_top a.logo:hover strong {
   -webkit-text-fill-color: transparent;
 }
 nav a.logo strong {
-  font-family: "Avenir";
   transform: scale(0.95,1);
   display: block;
   float: left;
   height: 5rem;
   vertical-align: baseline;
+  font-weight: 600;
 }
 nav a.logo span, nav ul a {
   text-transform: uppercase;
